@@ -1,8 +1,16 @@
-<div class="container">
+<div class="container text-center">
 
-  <h1 class="mt-1 text-center"> Wellcome to this useless web App!!</h1>
 
-  <h2>
-    Get
-  </h2>
+  <div *ngIf="!participant">
+    <h1 class="pt-1 text-center big"> Hey there, wellcome to this useless web App!!</h1>
+    <h2 class="pt-1 text-center medium">Get registered to have some fun with our online Raspberry Pi Server</h2>
+  </div>
 
+
+
+  <div *ngIf="participant">
+      <h1 class="pt-1 text-center big"> Great, now you are logged in lest have some fun with our awesome API server that is deployed on a Raspberry Pi!!!!!!!!!!!!!!!!!</h1>
+      <h2 class="pt-1 text-center medium">Start testing the side links</h2>
+  </div>
+
+</div>
