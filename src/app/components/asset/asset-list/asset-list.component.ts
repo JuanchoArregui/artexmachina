@@ -24,7 +24,15 @@ export class AssetListComponent implements OnInit {
   }
 
   private toggleGreenLed () {
-    this.raspberryService.toggleGreenLed();
+    this.raspberryService.toggleGreenLed().subscribe(data => console.log(data));
+  }
+
+  private toggleYellowLed () {
+    this.raspberryService.toggleYellowLed().subscribe(data => console.log(data));
+  }
+
+  private toggleRedLed () {
+    this.raspberryService.toggleRedLed().subscribe(data => console.log(data));
   }
 
 }

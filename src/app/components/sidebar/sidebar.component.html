@@ -17,7 +17,7 @@
             <!-- <li (click)="toggleClass($event)"><a [routerLink]="[/participants', participant.id']" ><i class="fa fa-user"></i> settings</a></li> -->
             <li (click)="toggleClass($event)"><a [routerLink]="['/assets']" ><i class="fa fa-cubes"></i> Test 1</a></li>
             <li (click)="toggleClass($event)"><a [routerLink]="['/transactions']" ><i class="fa fa-gavel"></i> Test 2</a></li>
-            <li (click)="toggleClass($event)"><a [routerLink]="['/']"><i class="fa fa-cogs"></i> Test 3</a></li>
+            <li (click)="toggleClass($event)"><a [routerLink]="['/participants']"><i class="fa fa-cogs"></i> Test 3</a></li>
             
 <!--
             <li> Link with dropdown items 
@@ -35,8 +35,8 @@
                 </ul>
             </li>-->
             <br>
-            <li>
-              <a (click)="onClickLogout()">Logout</a>
+            <li (click)="onClickLogout()">
+              <a [routerLink]="['/']" >Logout</a>
             </li>
         </ul>
     </nav>

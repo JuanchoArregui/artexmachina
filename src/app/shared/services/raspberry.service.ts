@@ -13,7 +13,25 @@ export class RaspberryService extends BaseApiService {
   }
 
   toggleGreenLed(): Observable<Response> {
-    return this.http.get(this.BRICKFY_LEDSAPI, BaseApiService.defaultOptions)
+    return this.http.get(this.BRICKFY_LEDSAPI + '/green', BaseApiService.defaultOptions)
+      .map((res: Response) => res.json())
+      .catch(error => this.handleError(error));
+  }
+
+  toggleYellowLed(): Observable<Response> {
+    return this.http.get(this.BRICKFY_LEDSAPI + '/yellow', BaseApiService.defaultOptions)
+      .map((res: Response) => res.json())
+      .catch(error => this.handleError(error));
+  }
+
+  toggleRedLed(): Observable<Response> {
+    return this.http.get(this.BRICKFY_LEDSAPI + '/red', BaseApiService.defaultOptions)
+      .map((res: Response) => res.json())
+      .catch(error => this.handleError(error));
+  }
+
+  toggleRele(): Observable<Response> {
+    return this.http.get(this.BRICKFY_LEDSAPI + '/rele', BaseApiService.defaultOptions)
       .map((res: Response) => res.json())
       .catch(error => this.handleError(error));
   }

@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
     this.sessionService.authenticate(this.participant).subscribe(
       (participant) => {
         loginForm.reset();
-        this.router.navigate([`/participants/${participant.id}`]);
+        this.router.navigate([`/`]);
       },
       (error) => {
         console.log('Este es el error de onSubmitLogin ');

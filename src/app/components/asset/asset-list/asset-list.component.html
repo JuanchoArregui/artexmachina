@@ -1,18 +1,18 @@
-<h1>
-  Este es el "asset-list.component"
-</h1>
-  
-   
-<h3>
-  Hola este es el componente en el que voy a intentar conectar con la raspberry!!!!!!!
-</h3>
-<button (click)="toggleGreenLed()" type="button" class="btn btn-success">Toogle Green Led</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
 
-<button (click)="alert()">
-    prompt
-  </button>
+
+<div class="text-center" >
+
+    <br>
+    <br>
+    <h1 class="pt-1 text-center big"> Test 1</h1>
+    <br>
+    <h2 class="pt-1 text-center medium">press buttons for toggling the leds at the rapberry pi server</h2>
+
+    
+<button (click)="toggleGreenLed()" type="button" class="mx-5 btn btn-success">Toogle Green Led</button>
+<button (click)="toggleYellowLed()" type="button" class="mx-5 btn btn-warning">Toogle Yellow Led</button>
+<button (click)="toggleRedLed()" type="button" class="mx-5 btn btn-danger ">Toogle Red Led</button>
+
   
 <!-- 
 
