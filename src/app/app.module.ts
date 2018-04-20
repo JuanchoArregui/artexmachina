@@ -7,6 +7,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { RaspberryService } from './shared/services/raspberry.service';
+
 
 import './rxjs.operators';
 
@@ -65,6 +67,7 @@ import { TransactionListComponent } from './components/transaction/transaction-l
     IsAuthenticatedGuard,
     AssetDetailsResolverGuard,
     CanLeaveAssetCreateGuard,
+    RaspberryService,
     {
       provide: ErrorHandler,
       useClass: GlobalErrorHandlerService

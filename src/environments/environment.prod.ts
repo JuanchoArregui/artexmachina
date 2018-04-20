@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseApi: 'https://www.brickfy.com'
+  baseApi: 'https://www.artexmachina.org'
 };

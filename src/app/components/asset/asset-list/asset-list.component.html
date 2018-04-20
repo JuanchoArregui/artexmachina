@@ -1,9 +1,21 @@
 <h1>
-    Este es el "asset-list.component"
-  </h1>
+  Este es el "asset-list.component"
+</h1>
   
+   
+<h3>
+  Hola este es el componente en el que voy a intentar conectar con la raspberry!!!!!!!
+</h3>
+<button (click)="toggleGreenLed()" type="button" class="btn btn-success">Toogle Green Led</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+
+<button (click)="alert()">
+    prompt
+  </button>
   
-  
+<!-- 
+
   <a [routerLink]="['/assets/new']">
   <i class="fa fa-plus"></i>
 </a>
@@ -14,4 +26,4 @@
     <p> {{ asset.value }} </p>
     <a [routerLink]="['/assets', asset.id]"> View Details </a>
   </div>
-</div>
+</div> -->

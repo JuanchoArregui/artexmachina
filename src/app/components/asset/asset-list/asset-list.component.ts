@@ -3,6 +3,8 @@ import { AssetsService } from './../../../shared/services/assets.service';
 import { Asset } from './../../../shared/model/asset.model';
 import { Component, OnInit } from '@angular/core';
 import { Participant } from '../../../shared/model/participant.model';
+import { RaspberryService } from './../../../shared/services/raspberry.service';
+
 
 @Component({
   selector: 'app-asset-list',
@@ -12,11 +14,17 @@ import { Participant } from '../../../shared/model/participant.model';
 export class AssetListComponent implements OnInit {
   assets: Array<Asset> = [];
 
-  constructor(private assetsService: AssetsService) { }
+  constructor(
+    private assetsService: AssetsService,
+    private raspberryService: RaspberryService) { }
 
   ngOnInit() {
     this.assetsService.list()
       .subscribe((assets) => this.assets = assets);
+  }
+
+  private toggleGreenLed () {
+    this.raspberryService.toggleGreenLed();
   }
 
 }
