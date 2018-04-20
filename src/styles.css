@@ -36,19 +36,19 @@ a, a:hover, a:focus {
 
 .big {
     font-family: 'Roboto', sans-serif;
-    font-size: 5em;
+    font-size: 6em;
     font-weight: 300;
-    line-height: 8em;
+    line-height: 1em;
     color: rgb(34, 34, 34);
-    padding: 10% 30%;
+    padding: 0 10%;
 }
 
 .medium {
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
     font-weight: 300;
-    line-height: 5em;
+    line-height: .7em;
     color: rgb(34, 34, 34);
-    padding: 10% 30%;
+    padding: 0 10%;
 }
 
