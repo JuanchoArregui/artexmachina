@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseApi: 'https://www.artexmachina.org'
+  baseApi: 'https://d99dc599.ngrok.io'
 };
